@@ -4,7 +4,7 @@ version = "0.1.0"
 authors = ["Vikram Tiwari <vikramtheone1@gmail.com>"]
 edition = "2018"
 
-license-file = "LICENSE.txt"
+license-file = "LICENSE"
 keywords = ["scientific", "formulas", "mathematics"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

@@ -77,3 +77,35 @@ fn math() {
 	let is_not_prime = bose::math::is_prime(153);
 	assert_eq!(false, is_not_prime);
 }
+
+#[test]
+fn geography() {
+	let radian = bose::geography::to_radian(10.0);
+	assert_eq!(0.17453292519943295, radian);
+
+	let haversine_distance_in_miles = bose::geography::distance(
+		bose::geography::Location {
+			latitude: 48.85341,
+			longitude: -2.34880,
+		},
+		bose::geography::Location {
+			latitude: 51.50853,
+			longitude: -0.12574,
+		},
+		bose::geography::Unit::Mile,
+	);
+	assert_eq!(194.5908231787244, haversine_distance_in_miles);
+
+	let haversine_distance_in_kilometers = bose::geography::distance(
+		bose::geography::Location {
+			latitude: 48.85341,
+			longitude: -2.34880,
+		},
+		bose::geography::Location {
+			latitude: 51.50853,
+			longitude: -0.12574,
+		},
+		bose::geography::Unit::Kilometer,
+	);
+	assert_eq!(313.0651854726397, haversine_distance_in_kilometers);
+}

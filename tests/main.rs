@@ -109,3 +109,9 @@ fn geography() {
 	);
 	assert_eq!(313.0651854726397, haversine_distance_in_kilometers);
 }
+
+#[test]
+fn constant() {
+	let distance_light_travels_2_seconds = bose::constant::c * 2.0;
+	assert_eq!(599584916.0, distance_light_travels_2_seconds);
+}

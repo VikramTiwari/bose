@@ -1,16 +1,17 @@
 //! Math
 
 /// Example
+///
 /// ```rust
 /// let factorial = bose::math::factorial(10);
 /// assert_eq!(3628800, factorial);
 /// ```
 pub fn factorial(number: u64) -> u64 {
-	match number {
-		0 => 1,
-		1 => 1,
-		_ => factorial(number - 1) * number,
-	}
+    match number {
+        0 => 1,
+        1 => 1,
+        _ => factorial(number - 1) * number,
+    }
 }
 
 /// Example
@@ -27,11 +28,11 @@ pub fn factorial(number: u64) -> u64 {
 /// assert_eq!(false, is_not_prime);
 /// ```
 pub fn is_prime(number: u64) -> bool {
-	let limit = (number as f64).sqrt() as u64 + 1;
-	for i in 2..=limit {
-		if number % i == 0 {
-			return false;
-		}
-	}
-	return true;
+    let limit = (number as f64).sqrt() as u64 + 1;
+    for i in 2..=limit {
+        if number % i == 0 {
+            return false;
+        }
+    }
+    return true;
 }

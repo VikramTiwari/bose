@@ -7,5 +7,6 @@ pub mod constant;
 pub mod geography;
 pub mod math;
 pub mod perimeter;
+pub mod physics;
 pub mod statistics;
 pub mod volume;

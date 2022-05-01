@@ -1,15 +1,19 @@
 [package]
 name = "bose"
-version = "0.1.3"
+version = "0.1.4"
 authors = ["Vikram Tiwari <vikramtheone1@gmail.com>"]
 edition = "2018"
-description = "A library of formulas"
+description = "A library of mathematical and scientific formulas"
 homepage="https://github.com/vikramtiwari/bose"
 repository="https://github.com/vikramtiwari/bose"
 license-file = "LICENSE"
 keywords = ["scientific", "formulas", "mathematics"]
 categories=["science"]
 readme="README.md"
+
+[term]
+verbose = true
+color = 'auto'
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
